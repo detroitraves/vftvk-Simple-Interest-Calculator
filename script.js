@@ -8,10 +8,9 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 
     if (validatePrincipal()){
-        var calculatedAmount = (parseFloat(principal) + parseFloat(interest));
-        var response = "If you deposit <strong>" + principal + "</strong><br/>" +"at an interest rate of <strong>" + rate + "%.</strong><br/>You will receive an amount of <strong>" + calculatedAmount + "</strong>, <br/>in the year <strong>" + year +"</strong>.";
+        var calculatedAmount = parseFloat(interest);
+        var response = "If you deposit <span class='highlight'>" + principal + "</span>,<br/>" +"at an interest rate of <span class='highlight'>" + rate + "%.</span><br/>You will receive an amount of <span class='highlight'>" + calculatedAmount + "</span>, <br/>in the year <span class='highlight'>" + year +"</span>.";
         document.getElementById("result").innerHTML = response;
-        document.getElementById("interestResult").innerHTML = interest;
     }
 
     
