@@ -5,8 +5,8 @@ body {
 }
 h1{
     color:grey;
-    font-family:verdana
-    text-align:center;
+    font-family:verdana;
+    text-align: center;
 }
 .maindiv {
     background-color: white;
@@ -14,8 +14,25 @@ h1{
     width:500px;
     text-align:left;
     margin:auto auto;
-    padding:20px;
+    padding:40px;
     border-radius: 25px;
+    line-height:1.8em;
+}
+
+.maindiv input{
+    display: inline-block;
+    width:50%;
+}
+.maindiv label{
+    display: inline-block;
+    width:32%;
+}
+.highlight{
+    background-color: yellow;
+}
+.contentCenter{
+    padding:10px 60px;
+    text-align:left;
     line-height:2em;
 }
 
